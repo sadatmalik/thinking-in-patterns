@@ -5,10 +5,14 @@ package com.sadatmalik.singleton;
 // Since this isn't inherited from a Cloneable base class and cloneability isn't added,
 // making it final prevents cloneability from being added through inheritance:
 final class Singleton {
-    private static Singleton s = new Singleton(47);
+    //private static Singleton s = new Singleton(47);
+    private static Singleton s;
     private int i;
 
     private Singleton(int x) {
+        if (s == null) {
+            s = new Singleton(47); // lazy initialize
+        }
         i = x;
     }
 
