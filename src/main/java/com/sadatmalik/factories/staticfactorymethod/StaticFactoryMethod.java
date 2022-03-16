@@ -1,5 +1,6 @@
-package com.sadatmalik.factories;
+package com.sadatmalik.factories.staticfactorymethod;
 
+import com.sadatmalik.factories.BadShapeCreationException;
 import com.sadatmalik.unittesting.UnitTest;
 
 import java.util.ArrayList;
