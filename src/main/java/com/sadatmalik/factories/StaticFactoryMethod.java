@@ -9,6 +9,15 @@ import java.util.List;
 /**
  * One approach is to make the factory a static method of the base class.
  *
+ * The factory() method takes an argument that allows it to determine what
+ * type of Shape to create; it happens to be a String in this case, but it
+ * could be any set of data.
+ *
+ * The factory() is now the only other code in the system that needs to be
+ * changed when a new type of Shape is added (the initialization data for the
+ * objects will presumably come from somewhere outside the system, and not be
+ * a hard-coded array as in the example).
+ *
  * @author sm@creativefusion.net
  */
 abstract class Shape {
