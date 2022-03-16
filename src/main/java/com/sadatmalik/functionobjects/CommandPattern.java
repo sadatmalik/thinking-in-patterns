@@ -6,6 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * The primary point of Command is to allow you to hand a desired
+ * action to a method or object.
+ *
+ * In the below example, this provides a way to queue a set of actions
+ * to be performed collectively. In this case, it allows you to dynamically
+ * create new behavior, something you can normally only do by writing new
+ * code but in the example can be done by interpreting a script.
+ *
+ * See the Interpreter pattern if what you need to do gets very complex.
+ *
  * @author sm@creativefusion.net
  */
 interface Command {
