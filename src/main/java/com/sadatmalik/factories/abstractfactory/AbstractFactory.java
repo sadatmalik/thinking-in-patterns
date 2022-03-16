@@ -3,6 +3,22 @@ package com.sadatmalik.factories.abstractfactory;
 import com.sadatmalik.unittesting.UnitTest;
 
 /**
+ * The Abstract Factory pattern has not one but several factory methods.
+ * Each of the factory methods creates a different kind of object.
+ *
+ * The idea is that at the point of creation of the factory object, you
+ * decide how all the objects created by that factory will be used.
+ *
+ * The example given in Design Patterns implements portability across
+ * various graphical user interfaces (GUIs): you create a factory object
+ * appropriate to the GUI that you’re working with, and from then on when
+ * you ask it for a menu, button, slider, etc. it will automatically create
+ * the appropriate version of that item for the GUI.
+ *
+ * This example suppose you are creating a general-purpose gaming
+ * environment, and you want to be able to support different types of
+ * games.
+ *
  * @author sm@creativefusion.net
  */
 interface Obstacle {
