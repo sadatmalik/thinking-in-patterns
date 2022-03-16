@@ -19,6 +19,10 @@ import com.sadatmalik.unittesting.UnitTest;
  * environment, and you want to be able to support different types of
  * games.
  *
+ * You determine the kind of game by choosing a particular
+ * GameElementFactory, and then the GameEnvironment controls the setup and
+ * play of the game.
+ *
  * @author sm@creativefusion.net
  */
 interface Obstacle {
